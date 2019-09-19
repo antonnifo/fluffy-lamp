@@ -2,7 +2,8 @@ import os
 
 import pymongo
 
-from data import insert_many_data, insert_one_data, update_one_query, set_values
+from tests.integration.mongo_test_data import insert_many_data, insert_one_data, update_one_query, set_values
+
 from mongo_abc import Mongo
 
 CONNECTION_URL = os.getenv('CONNECTION_URL')
